@@ -1,0 +1,145 @@
+
+/* General styles */
+:root {
+  --main-color: #454548;
+  --second-color: #179ea4;
+  --main-background-color: #fff;
+  --main-font-family: Arial,sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 6px;
+  color: #454548; 
+  font-family: ProximaNova, Arial, sans-serif;
+  margin-bottom: -10px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+/* General container for cards */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Card container */
+.cardContainer {
+  margin-right: 16px;
+  width: 272px;
+  height: 418px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;  
+  color: var(--main-color);
+  font-family: var(--main-font-family);
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  font-size: 16px;
+  border-radius: 16px;
+  box-shadow: 0 0 3px rgb(0 0 0 / 25%);
+  transition: box-shadow 250ms cubic-bezier(.4,0,.2,1);
+  line-height: 14px;
+  min-height: 28px;  
+  color: var(--main-color); 
+}
+
+/* Card continaer - Hover */
+.cardContainer:hover {
+  box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+  cursor: pointer;  
+}
+
+/* Image */
+img {
+  object-fit: fit;
+  width: 100%;
+}
+
+/* Flight info */
+.flightLogoContainer {
+  font-size: 16px;
+  margin-top: -30px;
+  position: relative;
+  float: right;
+  color: var(--second-color) ;
+  background-color: var(--main-background-color);
+  border-radius: 18px 18px 0 0;
+  padding: 6px 10px;
+}
+
+.mb-icon svg {
+  height: 1em;
+  width: 1em;
+}
+  
+.flightTypeContainer {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  margin-top: -10px;
+}
+ 
+/* Blank container */
+.blankContainer {
+  line-height: 14px;
+  min-height: 28px;
+  margin-top: 20px;
+}
+
+/* Data */
+.dataContainer {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  margin: 0 16px;   
+}
+
+/* Price and conditions info */
+.pricePerPerson {
+  font-size: 14px;
+  margin-top: -15px;
+  line-height: 1.25;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  font-weight: 600;
+}
+
+.serviceContainer {
+  margin-right: 16px;
+  padding: 16px 0;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1.25;
+}
+
+.priceContainer {
+  font-size: 24px;
+  margin-bottom: 4px;
+  margin-top: -20px;  
+}
+
+.conditionsContainer {
+  font-size: 12px;
+  margin-bottom: 4px;
+  margin-top: -10px;
+}
+
+.priceConditionsContainer {
+  border-top: 1px solid rgba(69,72,72,.3);
+  margin-right: 16px;
+  padding: 16px 0;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
